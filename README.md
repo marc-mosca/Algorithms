@@ -17,7 +17,10 @@ Here is the list of algorithms and data structures implemented in this repositor
 ### Searching Algorithms
 
 - Binary Search
+- Bubble Sort
 - Linear Search
+- Linked List
+- Queue
 - Square Search
 
 ### Sorting Algorithms
