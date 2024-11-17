@@ -39,7 +39,7 @@ func squareSearch<T: Comparable>(haystack: [T], needle: T) -> Bool {
     }
     
     index -= steps
-    for j in 0 ..< steps where index < haystack.count {
+    for _ in 0 ..< steps where index < haystack.count {
         guard haystack[index] < needle else { return true }
         index += 1
     }
@@ -80,7 +80,7 @@ func squareSearch<T: Comparable>(haystack: [T], needle: T) -> Int? {
     }
     
     index -= steps
-    for j in 0 ..< steps where index < haystack.count {
+    for _ in 0 ..< steps where index < haystack.count {
         guard haystack[index] < needle else { return index }
         index += 1
     }

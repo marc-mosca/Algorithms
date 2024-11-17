@@ -35,7 +35,6 @@ func binarySearch<T: Comparable>(haystack: [T], needle: T) -> Bool {
     
     while lowerBound < upperBound {
         let middleIndex: Int = lowerBound + (upperBound - lowerBound) / 2
-        let middleValue: T = haystack[middleIndex]
         
         guard haystack[middleIndex] != needle else { return true }
         
@@ -77,7 +76,6 @@ func binarySearch<T: Comparable>(haystack: [T], needle: T) -> Int? {
     
     while lowerBound < upperBound {
         let middleIndex: Int = lowerBound + (upperBound - lowerBound) / 2
-        let middleValue: T = haystack[middleIndex]
         
         guard haystack[middleIndex] != needle else { return middleIndex }
         
